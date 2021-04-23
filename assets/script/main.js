@@ -1,6 +1,3 @@
-
-
-
 // Source: https://www.w3schools.com/howto/howto_js_navbar_slide.asp
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -14,7 +11,7 @@ window.onscroll = function() {scrollFunction()};
 
 
 // Typing animation
-let greeting = document.getElementById('greeting');
+var greeting = document.getElementById('greeting');
 
 var typewriter = new Typewriter(greeting, {
     loop: true
