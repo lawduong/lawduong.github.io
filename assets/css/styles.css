@@ -61,9 +61,10 @@ body {
     align-items: center;
 }
 
+/* Introduction slide */
 #intro {
     display: flex;
-    background-color: white;
+    background-color: black;
     height: 50vh;
     width: 100%;
     padding: 48px;
@@ -86,7 +87,7 @@ body {
     color:white;
 }
 
-
+/* Education slide */
 #education {
     display: flex;
     background-color: white;
@@ -126,8 +127,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 640px;
-    width: 640px;
+    height: auto;
+    width: 50vh;
     
 }
 
