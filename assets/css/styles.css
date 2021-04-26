@@ -1,9 +1,10 @@
 body {
     display: flex;
-    background-color: cyan;
+    background-color: white;
     justify-content: center;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 .content {
@@ -35,8 +36,12 @@ body {
     padding: 5px;
     margin: 5px;
     color: black;
-    font-size: 16px;
+    font-size: 24px;
     text-decoration: none;
+}
+
+.nav-bar-item:last-child {
+    margin-right: 16px;
 }
 
 .nav-bar-item:hover {
@@ -48,7 +53,7 @@ body {
     position: fixed;
     left: 1%;
     color: black;
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
 }
 
@@ -78,6 +83,26 @@ body {
     align-items: center;
 }
 
+#portrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100vh;
+    
+}
+
+#portrait img {
+    height: auto;
+    max-width: 100%;    
+}
+
+#bio {
+    max-width: 50%;
+    margin-left: 36px;
+    margin-right: 50px;
+}
+
 #greeting {
     font-size: 36px;
     color: black;
@@ -94,6 +119,7 @@ body {
     color:black;
 }
 
+
 /* Education slide */
 #education {
     display: flex;
@@ -103,11 +129,45 @@ body {
     padding: 36px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+#education h1 {
+    color: black;
+    font-size: 64px;
+    font-weight: 400;
+
+
+}
+
+#education-header {
+    background-repeat: no-repeat;
+    width: 100%;
+
+    height: auto;
+
+}
+
+.coursework {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+}
+
+.courses {
+    max-width: 50%;
+    margin: 16px;
+    padding: 16px;
+    border: 4px;
+}
+
 
 #projects {
     display: flex;
-    background-color: white;
+    background-color: grey;
     height: 50vh;
     width: 100%;
     padding: 36px;
@@ -128,24 +188,5 @@ body {
 h1 {
     color: black;
     font-size: 64px;
-}
-
-#portrait {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100vh;
-    
-}
-
-#portrait img {
-    height: auto;
-    max-width: 100%;    
-}
-
-#bio {
-    max-width: 50%;
-    margin-left: 36px;
-    margin-right: 50px;
+    font-weight: 400;
 }

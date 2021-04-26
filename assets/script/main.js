@@ -9,16 +9,29 @@ function scrollFunction() {
 
 window.onscroll = function() {scrollFunction()};
 
-var i = 0;
-var txt = "Hello there! I'm Lawrence!"; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("greeting").innerHTML += txt.charAt(i);
-    i++;
+function typeWriter(str, id, speed) {
+  let i = 0;
+  if (i < str.length) {
+    document.getElementsById(id).innerHTML += str.charAt(i);
+    i ++
     setTimeout(typeWriter, speed);
-  } 
-}
+  }
+};
 
-window.onload = function() {typeWriter()};
+
+window.onload = function() {typeWriter("Lawrence Duong", "greeting", 50)};
+
+
+// var i = 0;
+// var txt = "Lawrence Duong"; /* The text */
+// var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+// function typeWriter() {
+//   if (i < txt.length) {
+//     document.getElementById("greeting").innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   } 
+// }
+
+//window.onload = function() {typeWriter()};
