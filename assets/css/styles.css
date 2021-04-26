@@ -104,18 +104,25 @@ body {
 }
 
 #greeting {
-    font-size: 36px;
+    font-size: 64px;
     color: black;
 }
 
 #bio h3 {
     font-size: 24px;
-    font-weight: 200;
+    font-weight: 400;
+    line-height: 200%;
     color: black;
 }
 
+#bio h2 {
+    font-size: 36px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
 #bio h1 {
-    font-size: 64px;
+    font-size: 48px;
     color:black;
 }
 
