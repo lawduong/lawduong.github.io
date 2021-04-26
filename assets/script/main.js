@@ -9,21 +9,16 @@ function scrollFunction() {
 
 window.onscroll = function() {scrollFunction()};
 
+var i = 0;
+var txt = "Hello there! I'm Lawrence!"; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-// Typing animation
-var greeting = document.getElementById('greeting');
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("greeting").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  } 
+}
 
-var typewriter = new Typewriter(greeting, {
-    loop: true
-});
-
-typewriter.typeString('Hello World!')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('Strings can be removed')
-    .pauseFor(2500)
-    .deleteChars(7)
-    .typeString('<strong>altered!</strong>')
-    .pauseFor(2500)
-    .start();
-
+window.onload = function() {typeWriter()};
