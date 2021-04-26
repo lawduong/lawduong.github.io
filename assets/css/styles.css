@@ -1,8 +1,6 @@
-
-
 body {
     display: flex;
-    background-color: white;
+    background-color: cyan;
     justify-content: center;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -23,20 +21,21 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #006bff;
+    /* background-color: #006bff; */
+    background-color: white;
     width: 100%;
     position: fixed;
     top: -100px;
     transition: top 0.3s;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 1px 1px 2px black;
 
 }
 
 .nav-bar-item {
     padding: 5px;
-    margin: 10px;
-    color: white;
-    font-size: 20px;
+    margin: 5px;
+    color: black;
+    font-size: 16px;
     text-decoration: none;
 }
 
@@ -45,6 +44,13 @@ body {
     transition: 0.5s;
 }
 
+#nav-bar p {
+    position: fixed;
+    left: 1%;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
 
 
 
@@ -61,38 +67,40 @@ body {
     align-items: center;
 }
 
+/* Introduction slide */
 #intro {
     display: flex;
     background-color: white;
-    height: 50vh;
+    height: 100vh;
     width: 100%;
-    padding: 48px;
-    justify-content: center;
+    padding: 36px;
+    justify-content: space-between;
     align-items: center;
 }
 
 #greeting {
     font-size: 36px;
-    color: white;
+    color: black;
 }
 
 #bio h3 {
     font-size: 24px;
-    color: white;
+    font-weight: 200;
+    color: black;
 }
 
 #bio h1 {
     font-size: 64px;
-    color:white;
+    color:black;
 }
 
-
+/* Education slide */
 #education {
     display: flex;
-    background-color: white;
+    background-color: beige;
     height: 50vh;
     width: 100%;
-    padding: 48px;
+    padding: 36px;
     justify-content: center;
     align-items: center;
 }
@@ -102,7 +110,7 @@ body {
     background-color: white;
     height: 50vh;
     width: 100%;
-    padding: 48px;
+    padding: 36px;
     justify-content: center;
     align-items: center;
 }
@@ -112,7 +120,7 @@ body {
     background-color: white;
     height: 50vh;
     width: 100%;
-    padding: 48px;
+    padding: 36px;
     justify-content: center;
     align-items: center;
 }
@@ -126,21 +134,18 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 640px;
-    width: 640px;
+    height: auto;
+    width: 100vh;
     
 }
 
 #portrait img {
     height: auto;
-    max-width: 30vh;
-    border-radius: 50%;
-    
+    max-width: 100%;    
 }
 
 #bio {
-    max-width: 40vh;
-    margin-left: 24px;
+    max-width: 50%;
+    margin-left: 36px;
     margin-right: 50px;
 }
-
