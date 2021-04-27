@@ -13,6 +13,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+
 
 }
 
@@ -37,12 +39,12 @@ body {
     padding: 5px;
     margin: 5px;
     color: black;
-    font-size: 24px;
+    font-size: 2.5vh;
     text-decoration: none;
 }
 
 .nav-bar-item:last-child {
-    margin-right: 16px;
+    margin-right: 18px;
 }
 
 .nav-bar-item:hover {
@@ -52,9 +54,9 @@ body {
 
 #nav-bar p {
     position: fixed;
-    left: 1%;
+    left: 2%;
     color: black;
-    font-size: 24px;
+    font-size: 2.5vh;
     text-decoration: none;
 }
 
@@ -95,32 +97,36 @@ body {
 
 #portrait img {
     height: auto;
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 50%;    
 }
 
 #bio {
     max-width: 50%;
-    margin-left: 36px;
-    margin-right: 50px;
+    height: 90vh;
+    margin: 24px 50px 0px 36px;
+
 }
 
 #greeting {
-    font-size: 56px;
+    margin-top: 0px;
+    font-size: 5vh;
     color: black;
 }
 
 #bio h3 {
-    font-size: 24px;
+    font-size: 2.5vh;
     font-weight: 400;
-    line-height: 200%;
+    line-height: 150%;
+    margin: 12px 0 12px 0;
     color: black;
 }
 
 #bio h2 {
-    font-size: 36px;
+    font-size: 5vh;
     font-weight: 400;
-    padding-bottom: 20px;
+    margin: 16px 0 16px 0;
+
 }
 
 #bio h1 {
@@ -132,8 +138,8 @@ body {
 /* Education slide */
 #education {
     display: flex;
-    background-color: #0058bc;
-    height: 50vh;
+    background-color: #455eba;
+    height: 100vh;
     width: 100%;
     padding: 36px;
     margin-top: 36px;
@@ -144,7 +150,7 @@ body {
 
 #education h1 {
     color: white;
-    font-size: 64px;
+    font-size: 6vh;
     font-weight: 400;
 
 
@@ -159,21 +165,29 @@ body {
 
 .coursework {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: white;
+    background-color: #455eba;
     width: 90%;
     height: 100%;
 }
 
 .courses {
+    background-color: #455eba;
+    color: white;
+    border-radius: 10%;
     font-size: 24px;
-    max-width: 50%;
+    width: auto;
+    height: 40vh;
     margin: 16px;
     padding: 16px;
     border: 4px;
 }
 
+.courselist {
+    color: white;
+}
 /* PROJECTS SLIDE */
 #projects-content {
     display: flex;
@@ -182,7 +196,7 @@ body {
     align-items: center;
     background-color: white;
     height: auto;
-    width: 100%;
+    width: 100vw;
     padding: 36px;
 }
 #projects {
@@ -200,7 +214,7 @@ body {
     background-color: white;
     margin: 24px;
     width: 90%;
-    height: 400px;
+    height: 40vh;
 
 }
 
@@ -213,8 +227,8 @@ body {
 }
 
 .project img {
-    width: 400px;
-    height: auto;
+    width: 15vw;
+    height: 15vw;
     border-radius: 25%;
     filter: drop-shadow(8px 8px 5px grey);
     z-index: 0;
@@ -233,13 +247,13 @@ body {
 
 .project-desc h2 {
     color: #0058bc;
-    font-size: 36px;
+    font-size: 2.5vh;
     font-weight: 400;
 }
 
 .project-desc h3 {
     color: #00ae21;
-    font-size: 24px;
+    font-size: 2vh;
     font-weight: 600;
 }
 
@@ -247,39 +261,34 @@ body {
 #contact {
     display: flex;
     flex-direction: column;
-    background-color: #a6a7ac;
-    height: 10vh;
+    background-color: #dedfe2;
+    height: 80px;
     width: 100%;
     padding: 36px;
     justify-content: space-between;
     align-items: center;
 }
 
-.socials {
+#socials {
     display: flex;
     justify-content: space-between;  
 }
 
-.social {
-    width: 50%;
-}
 .social-img {
     margin: 24px;
     width: 40px;
     height: auto;
 }
 
-.social a {
-    font-size: 24px;
+
+#contact #signature {
+    margin-bottom: 100px;
 }
 
-.social a:visited {
-    text-decoration: none;
-}
 
 h1 {
     color: black;
-    font-size: 64px;
+    font-size: 5vh;
     font-weight: 400;
     
 }

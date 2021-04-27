@@ -59,3 +59,5 @@ function deletingEffect() {
 };
 
 window.onload = function() {typingEffect()};
+
+
