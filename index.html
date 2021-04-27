@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets//css/styles.css">
-    <script type="text/javascript" src="assets/script/main.js"></script>
-
+    <script type="text/javascript" src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="icon" href="assets/img/sutro_square_smol.jpg">
     <title>Lawrence Duong</title>
 </head>
 <body>
@@ -35,54 +35,91 @@
                     computer science, data science research, pro-bono consulting, statistics, machine learning, food, fitness, and ya mom!
                 </h3>
                 <h2>Contact Me</h2> 
-                <h3>
-                    <ul>
-                        <li>law.duong@berkeley.edu</li>
-                        <li>(510) 232-3731</li>
-                    </ul>
-                    
-                </h3>
+                <h3>Lawrence Duong</h3>
+                <h3>law.duong@berkeley.edu</h3>
+                <h3>510-420-6969</h3>
+                <div id="socials">
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/lawrence-duong/" target="_blank">
+                            <img class="social-img" src="assets/img/linkedin.png">
+                        </a>
+                        
+                    </div>
+                    <div class="social">
+                        <a href="https://github.com/lawduong" target="_blank">
+                            <img class="social-img" src="assets/img/github.png"/> 
+                        </a>
+                    </div>
+                </div>   
             </div>
         </div>
 
         <!-- EDUCATION -->
         <div id="education">
-            <h1>Education</h1>
+            <!-- <h1>Education</h1> -->
+            <div id="degree">
+                <img src="assets/img/berkseal.png"/>
+                <div id="degree-desc">
+                    <h2>University of California, Berkeley</h2>
+                    <h3>B.A. Data Science and Economics (expected fall 2021)</h3>
 
+                </div>
+            </div>
 
             <div class="coursework">
-                <div class="courses">
-                    Data Science
-                    <div class="courselist">
+                <h4>Relevant Coursework</h4>
+
+                <div id="buttons">
+                    <div id="ds-btn" class="course-btn">
+                        <p class="btn-desc">Data Science</p>
+                    </div>
+                    <div id="econ-btn" class="course-btn">
+                        <p>Economics</p>
+                    </div>
+                    <div id="other-btn" class="course-btn">
+                        <p>Other</p>
+                    </div>
+                </div>
+                <div id=courselist>
+                    <div class="courses" id="ds-courses">
+                        <p>Data Science</p>
                         <ul>
-                            <li>Data 8</li>
-                            <li>Data 100</li>
-                            <li>Stat 88</li>  
-                            <li>CS 61A</li>
-                            <li>CS 61BL</li>
-                            <li>CS 188*</li>
-                            <li>IEOR 142*</li>
-                            <li>DATA C104</li>
+                            <li>The Structure and Interpretation of Computer Programs (CS 61A)</li>
+                            <li>Data Structures and Programming Methodology (CS 61BL)</li>
+                            <li>Foundations of Data Science (STAT C8) </li>
+                            <li>Probability and Mathematical Statistics in Data Science (STAT 88)</li>
+                            <li>Principles & Techniques of Data Science (STAT C100)</li>
+                            <li>Human Contexts and Ethics of Data (DATA C104)</li>
+                            <li>Introduction to Artificial Intelligence (CS 188)*</li>
+                            <li>Introduction to Machine Learning and Data Analytics (IEOR 142)*</li>
                         </ul>
                     </div>
-                </div>         
-                <div class="courses">
-                    Economics
-                    <div class="courselist">
+                    <div class="courses" id="econ-courses">
+                        <p>Economics</p>
+
                         <ul>
-                            <li>Econ 1</li>
-                            <li>Econ 100A</li>
-                            <li>Econ 100B</li>
-                            <li>Econ 115*</li>
-                            <li>Econ 131</li>
-                            <li>Econ 134</li>
-                            <li>Econ 136</li>
-                            <li>Econ 140</li>
-                            <li>Econ C175</li>
+                            <li>Introduction to Economics (ECON 1)</li>
+                            <li>Economic Analysis--Micro (ECON 100A)</li>
+                            <li>Economic Analysis--Macro (ECON 100B)</li>
+                            <li>The World Economy in the Twentieth Century (ECON 115)*</li>
+                            <li>Public Economics (ECON 131)</li>
+                            <li>Macroeconomic Policy from the Great Depression to Today (ECON 134)</li>
+                            <li>Financial Economics (ECON 136)</li>
+                            <li>Economic Statistics and Econometrics (ECON 140)</li>
+                            <li>Economic Demography (ECON C175)</li>
                         </ul>
-                        
                     </div>
-                </div>       
+                    <div class="courses" id="other-courses">
+                        <p>Other</p>
+
+                        <ul>
+                            <li>Linear Algebra and Differential Equations (Math 54)</li>
+                            <li>Principles of Business (UGBA 10)</li>
+                            <li>Personal Finance (UGBA 135)</li>
+                            <li>Project Management (UGBA 146)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -92,14 +129,18 @@
             <h1>Projects & Experience</h1>
             <div id="projects">
                 <div class="project">
-                    <img src="assets/img/vision.jpg">
+                    <a href="https://vsa.berkeley.edu/vision-2021-transcend/" target="_blank">
+                        <img src="assets/img/vision.jpg" alt="VISION Logo">
+                    </a>
                     <div class="project-desc">
                         <h2>VISION: High School Outreach Program</h2>
                         <h3>Co-Director (2019-present) | Finance Director (2018-2019)</h3>
                     </div>
                 </div>
                 <div class="project">
-                    <img src="assets/img/yelp.jpg">
+                    <a href="https://www.yelp.com/" target="_blank">
+                        <img src="assets/img/yelp.jpg" alt="Yelp logo">
+                    </a>
                     <div class="project-desc">
                         <h2>UEA x Yelp Inc.</h2>
                         <h3>Project Manager - Contract (2020)</h3>
@@ -107,7 +148,9 @@
                     
                 </div>
                 <div class="project">
-                    <img src="assets/img/swoop.jpg">
+                    <a href="https://swoopapp.com/" target="_blank">
+                        <img src="assets/img/swoop.jpg" alt="Swoop logo">
+                    </a>
 
                     <div class="project-desc">
                         <h2>UEA x Swoop</h2>
@@ -115,7 +158,9 @@
                     </div>
                 </div>
                 <div class="project">
-                    <img src="assets/img/discovery.png">
+                    <a href="https://data.berkeley.edu/fall-2019-discovery-projects" target="_blank">
+                        <img src="assets/img/discovery.png" alt="Discovery Research logo">
+                    </a>
                     <div class="project-desc">
                         <h2>Discovery Research Program</h2>
                         <h3>Undergraduate Student Researcher (2019)</h3>
@@ -159,6 +204,7 @@
 
 
 
+    <script type="text/javascript" src="assets/script/main.js"></script>
 
 </body>
 </html>

@@ -9,55 +9,62 @@ function scrollFunction() {
 
 window.onscroll = function() {scrollFunction()};
 
+function typeWriter() {
 
-// var i = 0;
+	var app = document.getElementById('greeting');
 
-// function typeWriter(txt, id) {
-//   if (i < txt.length) {
-//     document.getElementById(id).innerHTML += txt.charAt(i);
-//     i++;
-//   } 
-// };
-// window.onload = setInterval(function() {typeWriter("Hello there!", "greeting")}, 50);
+	var typewriter = new Typewriter(app, {
+		loop: true,
+	});
 
-const words = ["Hello there!", "I'm Lawrence.", "Nice to meet you!"];
-let i = 0;
-let timer;
 
-function typingEffect() {
-	let word = words[i].split("");
-	var loopTyping = function() {
-		if (word.length > 0) {
-			document.getElementById('greeting').innerHTML += word.shift();
-		} else {
-			deletingEffect();
-			return false;
-		};
-		timer = setTimeout(loopTyping, 200);
-	};
-	loopTyping();
+	typewriter.typeString('Hello there!')
+		.pauseFor(1500)
+		.deleteAll()
+		.typeString("I'm Lawrence.")
+		.pauseFor(1500)
+		.deleteAll()
+		.typeString("Nice to meet you.")
+		.pauseFor(1500)
+		.deleteAll()
+		.start();
+
+}
+
+window.onload = function() {typeWriter()};
+
+
+function showCourses(id) {
+	let boxElement = document.getElementById(id)
+	if (boxElement.style.visibility === "visible") {
+		boxElement.style.visibility = "hidden";
+	} else {
+		boxElement.style.visibility = "visible";
+
+	}
+}
+
+function dsButtonClicked() {
+	showCourses('ds-courses');
+}
+
+let dsBtn = document.getElementById("ds-btn");
+dsBtn.onclick = function() {dsButtonClicked()
 };
 
-function deletingEffect() {
-	let word = words[i].split("");
-	var loopDeleting = function() {
-		if (word.length > 0) {
-			word.pop();
-			document.getElementById('greeting').innerHTML = word.join("");
-		} else {
-			if (words.length > (i + 1)) {
-				i++;
-			} else {
-				i = 0;
-			};
-			typingEffect();
-			return false;
-		};
-		timer = setTimeout(loopDeleting, 100);
-	};
-	loopDeleting();
+
+function econButtonClicked() {
+	showCourses('econ-courses');
+}
+
+let econBtn = document.getElementById("econ-btn");
+econBtn.onclick = function() {econButtonClicked()
 };
 
-window.onload = function() {typingEffect()};
+function otherButtonClicked() {
+	showCourses("other-courses");
+}
 
-
+let otherBtn = document.getElementById("other-btn");
+otherBtn.onclick = function() {otherButtonClicked()
+};

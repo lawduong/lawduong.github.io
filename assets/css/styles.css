@@ -24,7 +24,6 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* background-color: #006bff; */
     background-color: white;
     width: 100%;
     position: fixed;
@@ -39,7 +38,7 @@ body {
     padding: 5px;
     margin: 5px;
     color: black;
-    font-size: 2.5vh;
+    font-size: 2vh;
     text-decoration: none;
 }
 
@@ -56,7 +55,7 @@ body {
     position: fixed;
     left: 2%;
     color: black;
-    font-size: 2.5vh;
+    font-size: 2vh;
     text-decoration: none;
 }
 
@@ -102,6 +101,10 @@ body {
 }
 
 #bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     max-width: 50%;
     height: 90vh;
     margin: 24px 50px 0px 36px;
@@ -109,13 +112,14 @@ body {
 }
 
 #greeting {
+    height: 5vh;
     margin-top: 0px;
     font-size: 5vh;
     color: black;
 }
 
 #bio h3 {
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 400;
     line-height: 150%;
     margin: 12px 0 12px 0;
@@ -123,7 +127,7 @@ body {
 }
 
 #bio h2 {
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: 400;
     margin: 16px 0 16px 0;
 
@@ -138,22 +142,45 @@ body {
 /* Education slide */
 #education {
     display: flex;
-    background-color: #455eba;
-    height: 100vh;
+    height: auto;
     width: 100%;
     padding: 36px;
     margin-top: 36px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    background-image: url("../img/imageedit_2_7752380929.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 #education h1 {
     color: white;
     font-size: 6vh;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+#education h2 {
+    color: black;
+    font-size: 4.25vh;
     font-weight: 400;
+    margin-bottom: 0;
+}
 
+#education h3 {
+    color: black;
+    font-size: 1.75vh;
+    font-weight: 500;
+    text-align: center;
+}
 
+#education h4 {
+    color: black;
+    font-size: 2vh;
+    font-weight: 500;
+    margin-bottom: 0;
+    z-index:1 ;
 }
 
 #education-header {
@@ -163,31 +190,113 @@ body {
 
 }
 
+#degree {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#degree img {
+    width: 30%;
+    height: auto;
+}
+
+#degree-desc {
+    margin: 0 24px 0 24px;
+    color: white;
+}
+
+.course-btn {
+    width: 150px;
+    height: 50px;
+    margin: 64px 64px 24px 64px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+    border: 5px solid rgb(255, 255, 255, 1);
+    background: rgba(18, 18, 18, 0.1);
+    transition: transform ease 0.2s;
+}
+
+.course-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.course-btn p {
+    text-align: center;
+    margin: 12px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .coursework {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #455eba;
-    width: 90%;
-    height: 100%;
+    margin-top: 48px;
+    /* background-color: #455eba; */
+    border-radius: 1%;
+    width: auto;
+    height: 50%;
+}
+
+#buttons {
+    display: flex;
+    height: 10vh;
+    z-index: 1;
+    
+}
+
+#courselist {
+    display: flex;
+    /* background-color: #455eba; */
+    
+    width: auto;
+    height: auto;
+    margin: 16px;
+}
+
+#ds-courses {
+    visibility: hidden;
+}
+
+#econ-courses {
+    visibility: hidden;
+}
+
+#other-courses {
+    visibility: hidden;
 }
 
 .courses {
-    background-color: #455eba;
+    width: 45%;
+    height: auto;
+    margin: 48px 24px 48px 24px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    background: rgba(18, 18, 18, 0.8);
+
+    transition: transform ease 0.2s;
     color: white;
-    border-radius: 10%;
-    font-size: 24px;
-    width: auto;
-    height: 40vh;
-    margin: 16px;
-    padding: 16px;
-    border: 4px;
+
+
 }
 
-.courselist {
-    color: white;
+.courses ul {
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 125%;
 }
+.courses p {
+    font-size: 18px;
+    text-align: center;
+}
+
+
 /* PROJECTS SLIDE */
 #projects-content {
     display: flex;
@@ -231,12 +340,15 @@ body {
     height: 15vw;
     border-radius: 25%;
     filter: drop-shadow(8px 8px 5px grey);
+    opacity: 75%;
     z-index: 0;
 }
 
 .project img:hover {
-    opacity: 50%;
-    transition: 1s;
+    opacity: 100%;
+    transition: .5s;
+    filter: drop-shadow(8px 8px 5px rgb(66, 66, 66));
+
 }
 
 .project-desc {
@@ -256,6 +368,9 @@ body {
     font-size: 2vh;
     font-weight: 600;
 }
+
+
+
 
 /* CONTACT SLIDE */
 #contact {
