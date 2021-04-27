@@ -29,6 +29,7 @@ body {
     top: -100px;
     transition: top 0.3s;
     box-shadow: 1px 1px 2px black;
+    z-index: 1;
 
 }
 
@@ -104,7 +105,7 @@ body {
 }
 
 #greeting {
-    font-size: 64px;
+    font-size: 56px;
     color: black;
 }
 
@@ -122,7 +123,7 @@ body {
 }
 
 #bio h1 {
-    font-size: 48px;
+    font-size: 42px;
     color:black;
 }
 
@@ -130,17 +131,18 @@ body {
 /* Education slide */
 #education {
     display: flex;
-    background-color: beige;
+    background-color: #0058bc;
     height: 50vh;
     width: 100%;
     padding: 36px;
+    margin-top: 36px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
 #education h1 {
-    color: black;
+    color: white;
     font-size: 64px;
     font-weight: 400;
 
@@ -148,10 +150,9 @@ body {
 }
 
 #education-header {
-    background-repeat: no-repeat;
     width: 100%;
-
     height: auto;
+    color: white;
 
 }
 
@@ -159,41 +160,130 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: grey;
-    width: 100%;
+    background-color: white;
+    width: 90%;
     height: 100%;
 }
 
 .courses {
+    font-size: 24px;
     max-width: 50%;
     margin: 16px;
     padding: 16px;
     border: 4px;
 }
 
-
-#projects {
+/* PROJECTS SLIDE */
+#projects-content {
     display: flex;
-    background-color: grey;
-    height: 50vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: auto;
     width: 100%;
     padding: 36px;
-    justify-content: center;
+}
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    background-color: white;
+}
+
+.project {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1 0 40%;
+    background-color: white;
+    margin: 24px;
+    width: 90%;
+    height: 400px;
+
+}
+
+.project:nth-child(even) {
+    margin-right: 5%;
+}
+
+.project:nth-child(odd) {
+    margin-left: 5%;
+}
+
+.project img {
+    width: 400px;
+    height: auto;
+    border-radius: 25%;
+    filter: drop-shadow(8px 8px 5px grey);
+    z-index: 0;
+}
+
+.project img:hover {
+    opacity: 50%;
+    transition: 1s;
+}
+
+.project-desc {
+    width: 60%;
+    margin-left: 48px;
+
+}
+
+.project-desc h2 {
+    color: #0058bc;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.project-desc h3 {
+    color: #00ae21;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* CONTACT SLIDE */
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #a6a7ac;
+    height: 10vh;
+    width: 100%;
+    padding: 36px;
+    justify-content: space-between;
     align-items: center;
 }
 
-#contact {
+.socials {
     display: flex;
-    background-color: white;
-    height: 50vh;
-    width: 100%;
-    padding: 36px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;  
+}
+
+.social {
+    width: 50%;
+}
+.social-img {
+    margin: 24px;
+    width: 40px;
+    height: auto;
+}
+
+.social a {
+    font-size: 24px;
+}
+
+.social a:visited {
+    text-decoration: none;
 }
 
 h1 {
     color: black;
     font-size: 64px;
     font-weight: 400;
+    
+}
+
+hr {
+    height: 1px;
+    width: 99%;
 }
