@@ -138,6 +138,11 @@ body {
     color:black;
 }
 
+#intro-socials {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 /* Education slide */
 #education {
@@ -149,7 +154,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    background-image: url("../img/imageedit_2_7752380929.png");
+    background-image: url("../img/wheeler.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -164,13 +169,13 @@ body {
 #education h2 {
     color: black;
     font-size: 4.25vh;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 0;
 }
 
 #education h3 {
     color: black;
-    font-size: 1.75vh;
+    font-size: 2vh;
     font-weight: 500;
     text-align: center;
 }
@@ -208,26 +213,27 @@ body {
 }
 
 .course-btn {
-    width: 150px;
-    height: 50px;
+    width: 180px;
+    height: 60px;
     margin: 64px 64px 24px 64px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 10%;
-    border: 5px solid rgb(255, 255, 255, 1);
-    background: rgba(18, 18, 18, 0.1);
+    box-shadow: 0 1px 6px rgba(65, 65, 65, 0.5);
+    border-radius: 5%;
+    border: 5px solid white;
+    background: rgba(255, 255, 255, 0.7);
     transition: transform ease 0.2s;
 }
 
 .course-btn:hover {
     transform: scale(1.1);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
     cursor: pointer;
 }
 
 .course-btn p {
     text-align: center;
-    margin: 12px;
+    margin: 18px 12px 12px 12px;
     color: black;
-    font-size: 18px;
+    font-size: 1.5vh;
     font-weight: 500;
 }
 
@@ -247,6 +253,7 @@ body {
     display: flex;
     height: 10vh;
     z-index: 1;
+    user-select: none;
     
 }
 
@@ -278,21 +285,22 @@ body {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
     border-radius: 2%;
     border: 5px solid rgba(255, 255, 255, 0.2);
-    background: rgba(18, 18, 18, 0.8);
-
+    background: rgba(255, 255, 255, 0.7);
     transition: transform ease 0.2s;
-    color: white;
+    color: black;
+    
 
 
 }
 
 .courses ul {
     padding-left: 32px;
-    font-size: 16px;
-    line-height: 125%;
+    font-size: 1.5vh;
+    line-height: 150%;
+    font-weight: 400;
 }
 .courses p {
-    font-size: 18px;
+    font-size: 1.75vh;
     text-align: center;
 }
 
@@ -340,12 +348,19 @@ body {
     height: 15vw;
     border-radius: 25%;
     filter: drop-shadow(8px 8px 5px grey);
-    opacity: 75%;
+    transition: .25s;
+    opacity: 100%;
     z-index: 0;
 }
 
+.project a{
+    width: 15vw;
+    height: 15vw
+}
+
 .project img:hover {
-    opacity: 100%;
+    transform: scale(1.05);
+    opacity: 75%;
     transition: .5s;
     filter: drop-shadow(8px 8px 5px rgb(66, 66, 66));
 
@@ -384,15 +399,20 @@ body {
     align-items: center;
 }
 
-#socials {
+#contact-socials {
     display: flex;
     justify-content: space-between;  
 }
 
 .social-img {
-    margin: 24px;
+    margin: 12px 16px 12px 16px;
     width: 40px;
     height: auto;
+}
+
+.social a{
+    height: 100%;
+    width: 100%;
 }
 
 
