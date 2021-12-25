@@ -248,6 +248,7 @@ body {
     border-radius: 1%;
     width: auto;
     height: 50%;
+    z-index: 0;
 }
 
 #buttons {
