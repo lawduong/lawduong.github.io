@@ -81,8 +81,8 @@ body {
     height: 50vh;
     width: 100%;
     padding: 36px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
 #portrait {
@@ -97,7 +97,7 @@ body {
 #portrait img {
     height: auto;
     max-width: 80%;
-    border-radius: 50%;    
+    border-radius: 100%;    
 }
 
 #bio {
@@ -139,7 +139,7 @@ body {
 }
 
 #intro-socials {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: flex-start;
 }
