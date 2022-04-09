@@ -25,6 +25,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     background-color: white;
+    opacity: 90%;
     width: 100%;
     position: fixed;
     top: -100px;
@@ -38,7 +39,7 @@ body {
     padding: 5px;
     margin: 5px;
     color: black;
-    font-size: 2vh;
+    font-size: 1vh;
     text-decoration: none;
 }
 
@@ -55,7 +56,7 @@ body {
     position: fixed;
     left: 2%;
     color: black;
-    font-size: 2vh;
+    font-size: 1vh;
     text-decoration: none;
 }
 
@@ -77,12 +78,13 @@ body {
 /* Introduction slide */
 #intro {
     display: flex;
-    background-color: white;
+    background: white url("../img/lawrence-20.jpg") no-repeat center;
+    background-size: cover;
     height: 100vh;
     width: 100%;
     padding: 36px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
 #portrait {
@@ -90,14 +92,14 @@ body {
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 100vh;
+    width: 40vh;
     
 }
 
 #portrait img {
     height: auto;
-    max-width: 80%;
-    border-radius: 50%;    
+    max-width: 60%;
+    border-radius: 10%;    
 }
 
 #bio {
@@ -107,8 +109,6 @@ body {
     align-items: flex-start;
     max-width: 50%;
     height: 90vh;
-    margin: 24px 50px 0px 36px;
-
 }
 
 #greeting {
@@ -120,26 +120,23 @@ body {
 
 #bio h3 {
     font-size: 2vh;
-    font-weight: 400;
+    font-style: italic;
+    font-weight: 500;
     line-height: 150%;
-    margin: 12px 0 12px 0;
-    color: black;
+    margin: 0 0 12px 0;
+    color: white;
 }
 
-#bio h2 {
-    font-size: 4vh;
-    font-weight: 400;
+#bio h1 {
+    font-size: 3vh;
+    font-weight: 600;
+    color: white;
     margin: 16px 0 16px 0;
 
 }
 
-#bio h1 {
-    font-size: 42px;
-    color:black;
-}
-
 #intro-socials {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: flex-start;
 }
@@ -147,7 +144,7 @@ body {
 /* Education slide */
 #education {
     display: flex;
-    height: auto;
+    height: 50vh;
     width: 100%;
     padding: 36px;
     margin-top: 36px;
@@ -184,6 +181,7 @@ body {
     color: black;
     font-size: 2vh;
     font-weight: 500;
+    text-align:center;
     margin-bottom: 0;
     z-index:1 ;
 }
@@ -238,7 +236,7 @@ body {
 }
 
 .coursework {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -381,7 +379,7 @@ body {
 
 .project-desc h3 {
     color: #00ae21;
-    font-size: 2vh;
+    font-size: 1.5vh;
     font-weight: 600;
 }
 
