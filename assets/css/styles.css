@@ -25,6 +25,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     background-color: white;
+    opacity: 90%;
     width: 100%;
     position: fixed;
     top: -100px;
@@ -77,8 +78,9 @@ body {
 /* Introduction slide */
 #intro {
     display: flex;
-    background-color: white;
-    height: 50vh;
+    background: white url("../img/lawrence-20.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
     width: 100%;
     padding: 36px;
     align-items: center;
@@ -90,14 +92,14 @@ body {
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 50vh;
+    width: 40vh;
     
 }
 
 #portrait img {
     height: auto;
-    max-width: 80%;
-    border-radius: 100%;    
+    max-width: 60%;
+    border-radius: 10%;    
 }
 
 #bio {
@@ -107,8 +109,6 @@ body {
     align-items: flex-start;
     max-width: 50%;
     height: 90vh;
-    margin: 24px 50px 0px 36px;
-
 }
 
 #greeting {
@@ -120,22 +120,23 @@ body {
 
 #bio h3 {
     font-size: 2vh;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%;
     margin: 12px 0 12px 0;
-    color: black;
+    color: white;
 }
 
 #bio h2 {
     font-size: 4vh;
-    font-weight: 400;
+    font-weight: 600;
+    color: white;
     margin: 16px 0 16px 0;
 
 }
 
 #bio h1 {
     font-size: 42px;
-    color:black;
+    color:white;
 }
 
 #intro-socials {
