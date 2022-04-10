@@ -44,7 +44,7 @@ body {
     padding: 5px;
     margin: 5px;
     color: black;
-    font-size: 1vh;
+    font-size: 2vh;
     text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ body {
     position: fixed;
     left: 2%;
     color: black;
-    font-size: 1vh;
+    font-size: 2vh;
     text-decoration: none;
 }
 
@@ -117,7 +117,7 @@ body {
 }
 
 #bio h3 {
-    font-size: 2vh;
+    font-size: 3vh;
     font-style: italic;
     font-weight: 500;
     line-height: 150%;
@@ -126,7 +126,7 @@ body {
 }
 
 #bio h1 {
-    font-size: 3vh;
+    font-size: 5vh;
     font-weight: 600;
     color: white;
     margin: 16px 0 16px 0;
