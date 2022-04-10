@@ -6,7 +6,8 @@
 body {
     display: flex;
     background-color: white;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
     overflow: visible;
@@ -139,120 +140,7 @@ body {
     align-items: flex-start;
 }
 
-/* Education slide */
-#education {
-    display: flex;
-    height: 50vh;
-    width: 100%;
-    padding: 36px;
-    margin-top: 36px;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    background-image: url("../img/wheeler.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 
-}
-
-#education h1 {
-    color: white;
-    font-size: 6vh;
-    font-weight: 300;
-    margin-bottom: 0;
-}
-#education h2 {
-    color: black;
-    font-size: 4.25vh;
-    font-weight: 500;
-    margin-bottom: 0;
-}
-
-#education h3 {
-    color: black;
-    font-size: 2vh;
-    font-weight: 500;
-    text-align: center;
-}
-
-#education h4 {
-    color: black;
-    font-size: 2vh;
-    font-weight: 500;
-    text-align:center;
-    margin-bottom: 0;
-    z-index:1 ;
-}
-
-#education-header {
-    width: 100%;
-    height: auto;
-    color: white;
-
-}
-
-#degree {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#degree img {
-    width: 30%;
-    height: auto;
-}
-
-#degree-desc {
-    margin: 0 24px 0 24px;
-    color: white;
-}
-
-.course-btn {
-    width: 180px;
-    height: 60px;
-    margin: 64px 64px 24px 64px;
-    box-shadow: 0 1px 6px rgba(65, 65, 65, 0.5);
-    border-radius: 5%;
-    border: 5px solid white;
-    background: rgba(255, 255, 255, 0.7);
-    transition: transform ease 0.2s;
-}
-
-.course-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-}
-
-.course-btn p {
-    text-align: center;
-    margin: 18px 12px 12px 12px;
-    color: black;
-    font-size: 1.5vh;
-    font-weight: 500;
-}
-
-.coursework {
-    display: none;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 48px;
-    /* background-color: #455eba; */
-    border-radius: 1%;
-    width: auto;
-    height: 50%;
-    z-index: 0;
-}
-
-#buttons {
-    display: flex;
-    height: 10vh;
-    z-index: 1;
-    user-select: none;
-    
-}
 
 
 
@@ -261,39 +149,33 @@ body {
 #projects-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: white;
     height: auto;
     width: 100vw;
     padding: 36px;
 }
+
 #projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
     background-color: white;
 }
 
 .project {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
     flex: 1 0 40%;
     background-color: white;
-    margin: 24px;
-    width: 90%;
-    height: 40vh;
-
+    width: 100vw;
+    height: 100vh;
 }
 
-.project:nth-child(even) {
-    margin-right: 5%;
-}
-
-.project:nth-child(odd) {
-    margin-left: 5%;
-}
 
 .project img {
     width: 15vw;
